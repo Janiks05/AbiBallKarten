@@ -1,0 +1,36 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+form h2 {
+    color: white;
+    line-height: 2.9rem;
+}
+
+.input-breite {
+    width: 10%;
+}
