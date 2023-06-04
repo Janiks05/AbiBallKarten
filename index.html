@@ -32,8 +32,8 @@
         <input class="input-breite form-control" type="email" id="inputField3" oninput="validateInput('inputField3')"
             name="email" style="margin-bottom: 5%;" required>
 
-        <button class="btn btn-outline-success" id="einreichenBtn" disabled type="submit"
-            style="margin-bottom: 5%;">Einreichen</button>
+        <button class="btn btn-outline-success" id="einreichenBtn" disabled type="submit" style="margin-bottom: 5%;"
+            onclick="safeParticipants()">Einreichen</button>
     </form>
 </body>
 
@@ -46,5 +46,13 @@
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
 <script src="./validateInput.js"></script>
+<script>
+    function safeParticipants() {
+        var participants = document.getElementById('inputField2').value
+        localStorage.setItem('gaeste', participants)
+        console.log(participants)
+    }
+</script>
+
 
 </html>

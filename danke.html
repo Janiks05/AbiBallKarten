@@ -20,15 +20,15 @@
 
 <body class="bg-dark">
     <h1>Danke für ihre Buchung</h1>
-    <h2>Um die Karten zu erhalten Überweisen sie das Geld hier Summe einfügen</h2>
+    <h2 id="ueberweisen">Um die Karten zu erhalten Überweisen sie das Geld hier Summe einfügen</h2>
     <!--Kontonr
     DE76 1505 0500 0102 0960 58
     Schulverein Christophorus Rügen e.V.
-    Verwendungszweck: “Nachname(ggf. des Abiturienten)_Abiball 23”
+    Verwendungszweck: “Nachname(der auf der Website angegeben wurde)_Abiball23”
     -->
 </body>
 <script>
-    // funktion die die anzahl * Eintrittspreis reichnet und an den h2 tag ranhängt
+    document.getElementById('ueberweisen').innerHTML += localStorage.getItem('geaste')
 </script>
 
 </html>
