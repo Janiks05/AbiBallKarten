@@ -20,7 +20,7 @@
 
 <body class="bg-dark">
     <h1>Danke für ihre Buchung</h1>
-    <h2 id="ueberweisen">Um die Karten zu erhalten Überweisen sie das Geld hier Summe einfügen</h2>
+    <h2 id="ueberweisen">Um die Karten zu erhalten Überweisen Sie </h2>
     <!--Kontonr
     DE76 1505 0500 0102 0960 58
     Schulverein Christophorus Rügen e.V.
@@ -28,7 +28,8 @@
     -->
 </body>
 <script>
-    document.getElementById('ueberweisen').innerHTML += localStorage.getItem('gaeste')
+    const preis = 20;
+    document.getElementById('ueberweisen').innerHTML += localStorage.getItem('gaeste') * preis
 </script>
 
 </html>
