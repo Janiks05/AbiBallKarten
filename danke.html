@@ -22,7 +22,6 @@
 <body class="bg-dark">
     <h1>Danke für ihre Buchung</h1>
     <h2 id="ueberweisen">Um die Karten zu erhalten Überweisen Sie </h2>
-    <h2>€ an folgendes Konto:</h2>
     <h3>
         Kontonummer: <br>
         DE76 1505 0500 0102 0960 58 <br>
@@ -37,7 +36,7 @@
 </body>
 <script>
     const preis = 20;
-    document.getElementById('ueberweisen').innerHTML += (localStorage.getItem('gaeste') * preis) + '€'
+    document.getElementById('ueberweisen').innerHTML += (localStorage.getItem('gaeste') * preis) + '€ an folgendes Konto: <br>'
 </script>
 
 </html>
