@@ -19,7 +19,7 @@ function validateInput(inputId) {
     } else {
         // Sonderzeichen gefunden
         // Hier kannst du eine Fehlermeldung anzeigen oder weitere Aktionen ausführen
-        var cleanedValue = inputValue.replace(/[^a-zA-Z0-9@.]/g, "");
+        var cleanedValue = inputValue.replace(/[^a-zA-ZäöüÄÖÜ.-@]/g, "");
         inputField.value = cleanedValue;
     }
 
