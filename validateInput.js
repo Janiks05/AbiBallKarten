@@ -13,7 +13,7 @@ function validateInput(inputId) {
     var inputValue = inputField.value;
 
     // Überprüfe, ob Sonderzeichen enthalten sind
-    if (/^[a-zA-Z0-9@.]+$/.test(inputValue)) {
+    if (/^[a-zA-Z0-9@.äöüÄÖÜ-]+$/.test(inputValue)) {
         // Keine Sonderzeichen vorhanden
         // Hier kannst du den Code ausführen, den du für gültige Eingaben vorgesehen hast
     } else {
